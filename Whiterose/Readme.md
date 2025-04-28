@@ -1,4 +1,7 @@
-# 🌹 TryHackMe Whiterose Writeup 🌹
+<div align="center">
+    <h1>🌹 TryHackMe Whiterose Writeup 🌹</h1>
+</div>
+
 
 <div align="right">
     <em>📌 By: Hoàng Vũ :).</em>
