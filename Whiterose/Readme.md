@@ -56,6 +56,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 
 ## 🔑3. Truy cập trang web
 - Thử tìm kiếm tên `Tyrell Wellick`, tuy nhiên, tài khoản hiện tại có vẻ chỉ xem được thông tin `Balance` mà không xem được số điện thoại.
+
 ![Tyrell Wellick](Images/Web1.png)
 
 - Kiểm tra một lượt trang web, tại page `messages` với đường dẫn `http://admin.cyprusbank.thm/messages/?c=5` có chứa tham số `c=5` - dấu hiệu có thể bị `IDOR`
