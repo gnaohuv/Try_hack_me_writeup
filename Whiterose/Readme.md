@@ -175,7 +175,7 @@ sudo sudoedit /etc/nginx/sites-available/admin.cyprusbank.thm
 
 ![Hoangdeptrai](Images/flag2.png)
 
-![Hoangdeptrai](Images/flag2.2.png)
+![Hoangdeptrai](Images/flag2.png)
 
 => Hoàn thành Lab :) 🔥🔥🔥
 
