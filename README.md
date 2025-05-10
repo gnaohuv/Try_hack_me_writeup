@@ -24,3 +24,5 @@
 
 #### 📌6. [Pickle Rick🥒🧠](/PickleRick/Readme.md)
 
+- https://tryhackme.com/room/picklerick
+
