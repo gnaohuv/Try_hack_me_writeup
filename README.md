@@ -20,8 +20,7 @@
 #### 📌5. [Whiterose🌹🌹](/Whiterose/Readme.md)
 
 - https://tryhackme.com/room/whiterose
-<<<<<<< HEAD
-=======
+
 
 #### 📌6. [Pickle Rick🥒🧠](/PickleRick/Readme.md)
->>>>>>> 1e4de5c (Updated PickleRick)
+
