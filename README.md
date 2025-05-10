@@ -29,3 +29,10 @@
 #### 📌7. [Corridor 🚪🔐](/Corridor/Readme.md)
 
 - https://tryhackme.com/room/corridor
+
+
+#### 📌8. [Brooklyn99 👮‍♂️🔫](/Brooklyn99/Readme.md)
+
+-  https://tryhackme.com/room/brooklynninenine
+
+
