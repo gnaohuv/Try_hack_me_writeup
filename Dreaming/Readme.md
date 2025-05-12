@@ -142,7 +142,7 @@ hydra -l hoang -P /usr/share/wordlists/rockyou.txt 10.10.21.144 http-post-form "
 
 - Tạm để file `getDreams.py` sang một bên, `test.py` chứa thông tin đáng quan tâm hơn.
 
-- File chưa một password `HeyLucien#@1999!`, có thể liên quan đến user `Lucien`.
+- File chứa một password `HeyLucien#@1999!`, có thể liên quan đến user `Lucien`.
 
 ![Hoangdeptrai](Images/26.png)
 
