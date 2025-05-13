@@ -44,7 +44,7 @@
 - https://tryhackme.com/room/cyberheroes
 
 
-#### 📌11. [New York Flankees ⚾🔓](/NewYorkFlankeesr/Readme.md)
+#### 📌11. [New York Flankees ⚾🔓](/NewYorkFlankees/Readme.md)
 
 - https://tryhackme.com/room/thenewyorkflankees
 
