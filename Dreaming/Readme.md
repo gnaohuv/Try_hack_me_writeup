@@ -9,7 +9,7 @@
 
 ## 🚀 1. Khởi động taget
 
-![Start taget](Images/1.png)
+![Start target](Images/1.png)
 
 ## 🔍 2. Recon
 
@@ -103,7 +103,7 @@ hydra -l hoang -P /usr/share/wordlists/rockyou.txt 10.10.21.144 http-post-form "
 
 ![Hoangdeptrai](Images/18.png)
 
-- Tuy nhiên file python gặp một số lỗi, trong khi đó, khi đọc kĩ hơn đoạn code exploit thì nó upload một file `phar - một định dạng nén được dùng để đóng gói toàn bộ mã nguồn PHP` lên taget
+- Tuy nhiên file python gặp một số lỗi, trong khi đó, khi đọc kĩ hơn đoạn code exploit thì nó upload một file `phar - một định dạng nén được dùng để đóng gói toàn bộ mã nguồn PHP` lên target
 
 ![Hoangdeptrai](Images/51.png)
 
