@@ -61,7 +61,7 @@ gobuster dir -u http://10.10.21.144/app/pluck-4.7.13/ -w /usr/share/dirbuster/wo
 
 - Gửi thử request, thu được một số trường thông tin:
     - Trường nhập mật khẩu là: `cont1`
-    - Trường `bogus` có thể là chống bot hoặc dummy (có thể để trống)
+    - Trường `bogus` có ý nghĩa khi mật khẩu đã được gửi và trường này là trống, thì mật khẩu sẽ mã hóa MD5
     - Nút submit là: `submit=Log+in`
 
 ![Hoangdeptrai](Images/9.png)
