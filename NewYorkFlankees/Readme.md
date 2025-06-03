@@ -3,7 +3,7 @@
 </h1>
 </div>
 
-## 🚀 1. Khởi động taget
+## 🚀 1. Khởi động target
 
 ![Start target](Images/1.png)
 

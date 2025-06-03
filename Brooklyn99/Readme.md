@@ -5,7 +5,7 @@
   <img src="Images/meme2.jpg" alt="HoangVu" width="350"/>
 </p>
 
-## 🚀 1. Khởi động taget
+## 🚀 1. Khởi động target
 
 ![Start taget](Images/1.png)
 

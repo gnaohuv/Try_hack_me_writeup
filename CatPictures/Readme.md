@@ -2,7 +2,7 @@
     <h1>🐱 TryHackMe Cat Pictures Writeup 🖼️</h1>
 </div>
 
-## 🚀 1. Khởi động taget
+## 🚀 1. Khởi động target
 
 ![Start taget](Images/1.png)
 
