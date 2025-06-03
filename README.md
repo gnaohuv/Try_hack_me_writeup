@@ -52,4 +52,8 @@
 
 - https://tryhackme.com/room/lightroom
 
+#### 📌13. [W1seGuy 👓🧠](/W1seGuy/Readme.md)
+
+- https://tryhackme.com/room/w1seguy
+
 

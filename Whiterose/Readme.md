@@ -7,7 +7,7 @@
     <em>📌 By: Hoàng Vũ :).</em>
 </div>
 
-## 🚀1. Khởi động taget
+## 🚀1. Khởi động target
 ![Start taget](Images/Start_machine.png)
 
 ## 🔍2. Recon
