@@ -60,4 +60,9 @@
 
 - https://tryhackme.com/room/b3dr0ck
 
+#### 📌15. [Lookup 🕵️‍♂️🔍](/Lookup/Readme.md)
+
+- https://tryhackme.com/room/lookup
+
+
 
