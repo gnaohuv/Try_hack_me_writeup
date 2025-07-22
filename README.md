@@ -64,5 +64,8 @@
 
 - https://tryhackme.com/room/lookup
 
+#### 📌16. [Super Secret TIp](/SuperSecretTIp/Readme.md)
+
+- https://tryhackme.com/room/supersecrettip
 
 
